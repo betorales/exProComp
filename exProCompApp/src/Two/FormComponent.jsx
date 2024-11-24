@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react"
-import {auth, storage} from '../backend/firebase'
+import {auth, storage} from '../backend/firebase.js'
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import SimpleReactValidator from 'simple-react-validator'
@@ -42,9 +42,6 @@ const FormComponent = () => {
         const downloadURL = await getDownloadURL(storageRef);
         console.log('Archivo subido:', downloadURL);
       }
-
-      
-
       // Limpiar el formulario
       setEmail('');
       setPassword('');
@@ -81,15 +78,16 @@ const FormComponent = () => {
 
   return (
     <div>
+      {/* Se muestra mensaje satisfactorio de registro o ingreso */}
        {successMessage && (
           <div className="alert alert-success alert-dismissible fade show" role="alert">
             {successMessage}
-            <button 
+            {/* <button 
               type="button" 
               className="btn-close" 
               onClick={() => setSuccessMessage('')}
               aria-label="Close"
-            ></button>
+            ></button> */}
           </div>
         )}
       <h2>Autenticación</h2>
