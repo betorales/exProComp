@@ -1,8 +1,11 @@
 # exProComp
-Examen Programación de Componentes
+> Examen de programación de componente - Iplacex 2024
 
 ## ¿Qué es este proyecto?
-Es un pequeño formulario que muestra los producto agregados a un carrito de compras simulado. Permite crear y nombrar un producto con su precio y luego agregarlo al carrito. Nada de otro mundo ¿no?
+Este pequeño proyecto es el examen final de programación de componentes con React utilizado como framework. Es un formulario de registro y un pequeño carrito de compras simulado con productos para eliminar. Nada de otro mundo, ¿verdad?
 
 ## ¿Cómo funciona?
-La información se pasa desde el formulario al componente padre. El componente padre transmite la información al componente hijo que funciona como carrito de compras. El producto puede ser borrado una vez que se envía.
+El usuario se registra en el formulario (a la derecha) y se envían los datos a firebase para ser almacenados. Luego ingresa con sus mismos datos, ¡y listo! Su función es únicamente almacener datos básicos y algún dato extra que pueda subir (aunque no funciona ese extra, porque se debe pagar). En cuanto al carrito de compras simulado, este solo elimina productos que por código se crearon. Al recargar la página, vuelven a actualizarse y estar permamante.
+
+## El siguiente paso
+Se debe hacer un despliegue en netlify y cordova... ¡Todo puede fallar! 
