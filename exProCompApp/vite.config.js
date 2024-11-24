@@ -8,6 +8,7 @@ dotenv.config()
 export default defineConfig(() => {
   return {
     plugins: [react()],
+    // Se dejan la variables de ambiente dentro del config, porque en el .env no las detecta de forma correcta
     define: {
       'import.meta.env.VITE_API_KEY': JSON.stringify("AIzaSyAOcqUqhonqNPpVXVmanXQCMXEaed30B0k"),
       'import.meta.env.VITE_AUTH_DOMAIN': JSON.stringify("examenprocomp.firebaseapp.com"),
